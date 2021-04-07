@@ -76,7 +76,7 @@ function testRenameFile(cs){
 
 //Test getting data from url
 function testGetData(cs){
-    var url = 'https://s3.amazonaws.com/lr-chaos/videos/encoded_files/000/000/548/original/Hands-Elegant-Road-04-22-13.mp4';
+    var url = 'https://drive.google.com/uc?export=download&id=1H79giDYN-SzSkYd5h09OQLpsYm4cRefn4';
     console.log('Retrieving data from ' + url);
     cs.getData(url, function(data){
         
@@ -86,7 +86,7 @@ function testGetData(cs){
 
 //Test getting and writing data from url to local file
 function testGetAndWrite(cs){
-    var url = 'https://s3.amazonaws.com/lr-chaos/videos/encoded_files/000/000/548/original/Hands-Elegant-Road-04-22-13.mp4';
+    var url = 'https://drive.google.com/uc?export=download&id=1H79giDYN-SzSkYd5h09OQLpsYm4cRefn';
     console.log('Retrieving data from ' + url);
     cs.getAndWrite(url, 'video.mp4', 'video/mp4', {create: true}, function(){
         
